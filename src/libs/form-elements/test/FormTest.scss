@@ -1,0 +1,50 @@
+@import "assets/styles/mixin.scss";
+@import "assets/styles/variable.scss";
+
+.com-testform-signup {
+  margin: 0 auto 35px auto;
+  width: 90%;
+
+  .text-container {
+    width: 100%;
+    .title {
+      font-size: 1.5rem;
+    }
+    .description {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+  }
+  .form-container {
+    margin-top: 32px;
+    input {
+      margin: 4px 0;
+      padding: 8px 10px;
+      width: 100%;
+      border: 1px solid black;
+      border-radius: 3px;
+      font-size: 1rem;
+      color: black !important;
+
+      &::placeholder {
+        color: black;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+
+    .error {
+      font-size: 0.7rem;
+      color: red;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .signup {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "assets/styles/mixin.scss";
+@import "assets/styles/variable.scss";
+
+@media (min-width: 768px) {
+  // // support for fullscroll
+  // html body {
+  //   height: 100%;
+  //   overflow: hidden;
+  // }
+
+  // make sure to add this class to fullscreen item containter
+  .fullscroll {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    height: 100vh;
+
+    &__section {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      z-index: 0;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+    &__section--first-active {
+      z-index: 1 !important;
+      opacity: 1 !important;
+      transition: none !important;
+      background-color: #000;
+    }
+
+    &__section--active {
+      z-index: 1;
+      opacity: 1;
+    }
+  }
+}

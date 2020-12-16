@@ -1,0 +1,55 @@
+// @import "assets/styles/mixin.scss";
+@import "assets/styles/variable.scss";
+
+.checkbox {
+  margin: 4px 0;
+  display: block;
+  position: relative;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+  input:checked + .check-mark::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    top: 40%;
+    transform-origin: left top;
+    transform: translate(0%, 0) rotate(-45deg);
+    width: 15px;
+    height: 8px;
+    border-left: 2px solid pink;
+    border-bottom: 2px solid pink;
+    animation: checkanim 300ms forwards;
+  }
+  @keyframes checkanim {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    50% {
+      width: 0;
+      height: 8px;
+    }
+    100% {
+      width: 15px;
+      height: 8px;
+    }
+  }
+
+  .check-mark {
+    width: 0.9rem;
+    height: 0.9rem;
+    position: absolute;
+    display: block;
+    border: 1px solid currentColor;
+    border-radius: 2px;
+    left: 0;
+    top: 0.15rem;
+  }
+
+  p {
+    display: block;
+    padding-left: 24px;
+  }
+}

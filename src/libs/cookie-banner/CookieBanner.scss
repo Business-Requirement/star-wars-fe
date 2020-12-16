@@ -1,0 +1,99 @@
+.gl-cookie {
+  z-index: 200;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 149, 243, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  overflow: visible !important;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in;
+
+  .gl-co-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .gl-co-capt,
+  .gl-co-button {
+    padding: 4px 0;
+  }
+
+  .auto {
+    max-width: 1300px;
+    padding: 15px;
+  }
+
+  .h-b-btn {
+    display: inline-block;
+    margin: 0 4px;
+    padding: 10px 30px;
+    color: #fff !important;
+    border: 2px solid;
+    border-color: #fff !important;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+
+  .h-b-btn:hover {
+    background-color: #fff !important;
+    color: #0095f3 !important;
+    border-color: #fff !important;
+  }
+
+  .clearfix {
+    display: none;
+  }
+}
+.gl-cookie.show {
+  transform: translateY(0);
+}
+
+// custom cookie banner
+.cookie-banner {
+  z-index: 200;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 149, 243, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  overflow: visible !important;
+  transform: translateY(100%); // hide at bottom
+  transition: transform 0.3s ease-in;
+
+  .co-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1300px;
+    padding: 15px;
+  }
+
+  .co-button {
+    margin: 0 4px;
+    padding: 10px 30px;
+    color: #fff !important;
+    border: 2px solid;
+    border-color: #fff !important;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fff !important;
+      color: #0095f3 !important;
+      border-color: #fff !important;
+    }
+  }
+}
+.cookie-banner.show {
+  transform: translateY(0);
+}

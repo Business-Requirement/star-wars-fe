@@ -1,0 +1,15 @@
+@import "swiper/swiper"; // main style
+
+// component style
+@import "swiper/src/components/navigation/navigation";
+@import "swiper/src/components/pagination/pagination";
+
+// override for outside container
+
+.swiper-pagination {
+  position: static;
+  width: 100%;
+  .swiper-pagination-bullet {
+    margin: 0 4px;
+  }
+}

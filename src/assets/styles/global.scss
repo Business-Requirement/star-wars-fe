@@ -1,0 +1,72 @@
+// this define the global style AND it should be inlcude only in index.scss
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap");
+@import "assets/styles/variable.scss";
+@import "assets/styles/mixin.scss";
+
+// reset, default
+html,
+body {
+  margin: 0;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+
+  @include tablet {
+    font-size: 15px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+  }
+
+  // special laptop
+  @include laptop {
+    font-size: 16px;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul {
+  padding: 0;
+  li {
+    list-style-type: none;
+  }
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+// custom
+
+.mobile {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}
+
+.tablet {
+  display: block;
+  @include desktop {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}

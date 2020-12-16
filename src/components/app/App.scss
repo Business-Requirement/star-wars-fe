@@ -1,0 +1,14 @@
+// make sure all type is wrap under root component name, and component name must be unique
+.com-app {
+
+  max-width: 1024px;
+  margin: auto;
+  overflow: hidden;
+  nav ul {
+    list-style: none;
+
+    li a {
+      text-decoration: none;
+    }
+  }
+}
