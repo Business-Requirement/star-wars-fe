@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "embla-carousel": "^2.8.1",
     "gsap": "^3.2.6",
     "lodash-es": "^4.17.15",
